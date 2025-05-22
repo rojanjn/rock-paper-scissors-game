@@ -12,20 +12,30 @@
 
             int counter = 0;
 
-            Console.WriteLine("");
-            Console.WriteLine("WELCOME TO THE GAME!");
-            Console.WriteLine("---------------------------------");
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("==============================================");
+            Console.WriteLine("            WELCOME TO THE GAME!");
+            Console.WriteLine("=============================================="); Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine();
             Console.WriteLine("In this game, you will have to choose between Rock, Paper, or Scissors.");
-            Console.WriteLine("And the machine will choose one randomly as well.");
-            Console.WriteLine("Let's see who wins the most rounds :)");
-            Console.WriteLine("---------------------------------");
-            Console.WriteLine("Before starting the game, please let me know your name:");
-            string player = Console.ReadLine();
+            Console.WriteLine("The computer will also pick one at random.");
+            Console.WriteLine("Let's see who wins the most rounds! 😈");
+            Console.WriteLine("----------------------------------------------");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine("Before we begin, what's your name warrior?");
+            Console.ForegroundColor = ConsoleColor.White;
+            string player = Console.ReadLine(); //reading user's name
 
-            Console.WriteLine("Pretty name!");
-            Console.WriteLine("");
-            Console.WriteLine("Now, LET'S PLAY!");
-            Console.WriteLine("");
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine($"{player}, What a legendary name!");
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("==============================================");
+            Console.WriteLine("            Now, LET'S PLAY!");
+            Console.WriteLine("=============================================="); Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine();
 
             
 
