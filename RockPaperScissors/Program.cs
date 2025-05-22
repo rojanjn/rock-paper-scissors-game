@@ -7,11 +7,13 @@
             //rock paper scissors game
             //the user plays against the machine
 
+            string[] options = { "Rock", "Paper", "Scissors" };
             Random random = new Random();
-            //string randomChoice = random("Rock", "Paper", "Scissors");
+            string randomChoice = options[random.Next(options.Length)];
 
             int counter = 0;
 
+            //introduction & instructions
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("==============================================");
@@ -25,7 +27,9 @@
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("Before we begin, what's your name warrior?");
             Console.ForegroundColor = ConsoleColor.White;
-            string player = Console.ReadLine(); //reading user's name
+
+            //reading user's name
+            string player = Console.ReadLine();
 
             Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.Magenta;
@@ -37,7 +41,31 @@
             Console.WriteLine("=============================================="); Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine();
 
-            
+            //game engine:
+            while (true)
+            {
+                Console.WriteLine($"{player}, It's your turn!");
+                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                Console.WriteLine("1 --> Rock");
+                Console.WriteLine("2 --> Paper");
+                Console.WriteLine("3 --> Scissors");
+                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                Console.WriteLine("Please choose one:");
+
+                string input = Console.ReadLine();
+                int userInput;
+
+                //validation
+                if (!int.TryParse(input, out userInput) || userInput < 1 || userInput > 3)
+                {
+                    Console.ForegroundColor= ConsoleColor.Cyan;
+                    Console.WriteLine("INVALID INPUT! Please enter 1, 2, or 3.");
+                    Console.ForegroundColor= ConsoleColor.White;
+                    continue; //restarting the loop
+                }
+
+
+            }
 
         }
     }
