@@ -2,6 +2,7 @@
 ```plaintext
 bin/
 obj/
+.vs/
 *.user
 *.suo
 *.exe
