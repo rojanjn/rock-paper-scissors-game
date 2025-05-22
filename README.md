@@ -14,8 +14,10 @@ A fun and colorful C# console game where you battle against a cheeky AI using th
 ---
 
 ## Preview
-![image](https://github.com/user-attachments/assets/6f22f2e8-698c-46ce-818f-6204e0b54755)
-![image](https://github.com/user-attachments/assets/19647856-1f45-41bb-93be-42f5af2ad23d)
+
+- ![image](https://github.com/user-attachments/assets/6f22f2e8-698c-46ce-818f-6204e0b54755)
+
+- ![image](https://github.com/user-attachments/assets/19647856-1f45-41bb-93be-42f5af2ad23d)
 
 ---
 
